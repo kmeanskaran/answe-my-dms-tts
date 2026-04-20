@@ -1,0 +1,15 @@
+[project]
+name = "answer-my-dms-atoms"
+version = "0.1.0"
+description = "DM-focused voice agent built with Smallest Atoms SDK"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "python-dotenv>=1.0.1",
+    "requests>=2.32.0",
+    "smallestai",
+    "streamlit>=1.37.0",
+]
+
+[tool.uv]
+package = false
