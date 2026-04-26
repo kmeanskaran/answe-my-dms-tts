@@ -1,0 +1,29 @@
+{
+  "project": "answe-my-dms-tts",
+  "version": "v1",
+  "created_at": "2026-04-26T15:48:47.392463+00:00",
+  "command": "design",
+  "effective_mode": "fresh",
+  "language": "python",
+  "style": "balanced",
+  "cloud": "aws",
+  "role": "Platform Engineer",
+  "prompt": "",
+  "web_search_mode": "auto",
+  "web_search_effective": true,
+  "source_path": "/Users/karan/Documents/machine-learning/answe-my-dms-tts",
+  "source_sha256": "3c48f1b92ec83341ee337191ee8b92934224c4060aad3894ae1e0e7b6d7e15d3",
+  "mermaid_sha256": "3ada0fe6a6e3fbaf7526d1dd6409efed8540cac289b1224ad60f5fe1f6761fe3",
+  "parent_version": null,
+  "subagents": [
+    "extractor",
+    "stack-profiler",
+    "architect",
+    "diagrammer",
+    "reporter",
+    "reviewer"
+  ],
+  "review_loop_limit": 2,
+  "generation_source": "llm_workflow",
+  "llm_workflow_used": true
+}
