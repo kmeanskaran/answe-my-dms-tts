@@ -1,0 +1,20 @@
+flowchart TD
+    n1["Client"]
+    n2["API Gateway"]
+    n3["API Gateway"]
+    n4["Feature Store (Feast)"]
+    n5["Feature Store Cache (Local LRU)"]
+    n6["Feature Store Replication Service"]
+    n7["Training Pipeline Orchestrator"]
+    n8["PostgreSQL (encryption at rest, read replicas)"]
+    n9["Redis Cluster (sharded, memory cost optimized)"]
+    n10["Apache Kafka (cluster with 3 brokers, replication factor 3)"]
+    n1 -->|request| n2
+    n2 -->|route| n3
+    n2 -->|route| n4
+    n2 -->|route| n5
+    n2 -->|route| n6
+    n2 -->|route| n7
+    n3 -->|read/write| n8
+    n3 -->|cache| n9
+    n3 -->|publish| n10

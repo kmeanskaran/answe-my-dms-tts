@@ -1,0 +1,20 @@
+flowchart TD
+    n1["Client"]
+    n2["API Gateway"]
+    n3["API Gateway"]
+    n4["Auth Service"]
+    n5["Rate Limiter Service"]
+    n6["DM Reply Service"]
+    n7["Text-to-Speech Service"]
+    n8["Apache Cassandra"]
+    n9["Redis Cluster"]
+    n10["Apache Kafka"]
+    n1 -->|request| n2
+    n2 -->|route| n3
+    n2 -->|route| n4
+    n2 -->|route| n5
+    n2 -->|route| n6
+    n2 -->|route| n7
+    n3 -->|read/write| n8
+    n3 -->|cache| n9
+    n3 -->|publish| n10
